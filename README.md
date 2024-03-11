@@ -1,7 +1,7 @@
 
 # PhytNet Training Framework
 
-This repository contains the implementation for training the PhytNetV0 model, a convolutional neural network designed specifically for classifying plant diseases from images. The training script supports both standard training and hyperparameter optimization through Weights & Biases (WandB) sweeps. The predefined optimisation sweep shoudl be run to this the model archtecture you your dataset before final training. While bolerplate dataloading code etc has been provided, the train() function has been left blank for you to insert your own code.
+This repository contains the implementation for training the PhytNetV0 model, a convolutional neural network designed specifically for classifying plant diseases from images. The training script supports both standard training and hyperparameter optimization through Weights & Biases (WandB) sweeps. The predefined optimisation sweep should be run to customise the model archtecture to your dataset before final training. While bolerplate dataloading code etc has been provided, the train() function has been left blank for you to insert your own code.
 The original paper for PhytNet can be found here: https://arxiv.org/abs/2311.12088
 
 ## Abstract
