@@ -1,6 +1,3 @@
-Creating a README for your GitHub repository helps users understand what your project is about, how to set it up, and how to use it. Below is a template README for the code you provided, focused on a project that involves training a neural network model named PhytNetV0 with optional hyperparameter tuning via Weights & Biases (WandB) sweeps.
-
----
 
 # PhytNetV0 Training Framework
 
