@@ -2,11 +2,22 @@
 # PhytNet Training Framework
 
 This repository contains the implementation for training the PhytNetV0 model, a convolutional neural network designed specifically for classifying plant diseases from images. The training script supports both standard training and hyperparameter optimization through Weights & Biases (WandB) sweeps. The predefined optimisation sweep should be run to customise the model architecture for your dataset before final training. While boilerplate dataloading code etc. has been provided, the train() function has been left blank for you to insert your own code.
-The original PhytNet paper (under review) can be found here: https://arxiv.org/abs/2311.12088
+The original published PhytNet paper can be found here: https://bsapubs.onlinelibrary.wiley.com/doi/full/10.1002/aps3.11620
 
 ## Abstract
 
-Automated disease, weed and crop classification with computer vision will be invaluable in the future of agriculture. However, existing model architectures like ResNet, EfficientNet and ConvNeXt often underperform on smaller, specialised datasets typical of such projects. We address this gap with informed data collection and the development of a new CNN architecture, PhytNet. Utilising a novel dataset of infrared cocoa tree images, we demonstrate PhytNet's development and compare its performance with existing architectures. Data collection was informed by analysis of spectroscopy data, which provided useful insights into the spectral characteristics of cocoa trees. Such information could inform future data collection and model development. Cocoa was chosen as a focal species due to the diverse pathology of its diseases, which pose significant challenges for detection. ResNet18 showed some signs of overfitting, while EfficientNet variants showed distinct signs of overfitting. By contrast, PhytNet displayed excellent attention to relevant features, no overfitting, and an exceptionally low computation cost (1.19 GFLOPS). As such PhytNet is a promising candidate for rapid disease or plant classification, or precise localisation of disease symptoms for autonomous systems.
+Abstract
+Premise
+Automated disease, weed, and crop classification with computer vision will be invaluable in the future of agriculture. However, existing model architectures like ResNet, EfficientNet, and ConvNeXt often underperform on smaller, specialised datasets typical of such projects.
+
+Methods
+We address this gap with informed data collection and the development of a new convolutional neural network architecture, PhytNet. Utilising a novel dataset of infrared cocoa tree images, we demonstrate PhytNet's development and compare its performance with existing architectures. Data collection was informed by spectroscopy data, which provided useful insights into the spectral characteristics of cocoa trees. Cocoa was chosen as a focal species due to the diverse pathology of its diseases, which pose significant challenges for detection.
+
+Results
+ResNet18 showed some signs of overfitting, while EfficientNet variants showed distinct signs of overfitting. By contrast, PhytNet displayed excellent attention to relevant features, almost no overfitting, and an exceptionally low computation cost of 1.19 GFLOPS.
+
+Conclusions
+We show that PhytNet is a promising candidate for rapid disease or plant classification and for precise localisation of disease symptoms for autonomous systems. We also show that the most informative light spectra for detecting cocoa disease are outside the visible spectrum and that efforts to detect disease in cocoa should be focused on local symptoms, rather than the systemic effects of disease.
 
 ## Prerequisites
 
